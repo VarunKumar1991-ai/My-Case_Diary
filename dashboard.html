@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card center">
+            <div class="flex-between">
+                <h2>Dashboard</h2>
+                <div>
+                    <button id="themeToggle" class="theme-toggle" onclick="toggleTheme()" style="margin-right:10px;">🌙</button>
+                    <button class="btn btn-danger" onclick="logout()">Logout</button>
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <a href="dashboard.html" class="btn btn-block">Home</a>
+                <a href="new-case.html" class="btn btn-block">नया पर्चा लिखे (New Case)</a>
+                <a href="view-cases.html" class="btn btn-block">पर्चे देखें (View Cases)</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

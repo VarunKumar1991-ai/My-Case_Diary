@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - My Case Diary</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container" style="max-width: 400px; margin-top: 10vh;">
+        <div class="card" style="text-align: center;">
+            <h1 style="color: var(--primary-color); margin-bottom: 2rem;">My Case Diary</h1>
+            <p style="margin-bottom: 2rem; color: var(--text-color); opacity: 0.8;">Login for UP Police Investigators</p>
+            
+            <form id="loginForm">
+                <div class="form-group" style="text-align: left;">
+                    <label for="mobileNumber">Mobile Number</label>
+                    <input type="tel" id="mobileNumber" class="form-control" placeholder="Enter your 10-digit mobile number" pattern="[0-9]{10}" required>
+                </div>
+                
+                <button type="button" id="sendOtpBtn" class="btn btn-block">Send OTP</button>
+                
+                <div id="otpSection" class="d-none" style="margin-top: 1.5rem;">
+                    <div class="form-group" style="text-align: left;">
+                        <label for="otpInput">Enter OTP</label>
+                        <input type="text" id="otpInput" class="form-control" placeholder="Enter 4-digit OTP" maxlength="6">
+                    </div>
+                    <button type="button" id="verifyOtpBtn" class="btn btn-block" style="background-color: var(--success-color);">Verify & Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

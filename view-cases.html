@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Cases</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="flex-between" style="margin-bottom: 20px;">
+                <h2>Saved Cases</h2>
+                <div>
+                    <button id="themeToggle" class="theme-toggle" onclick="toggleTheme()" style="margin-right:10px;">🌙</button>
+                    <a href="dashboard.html" class="btn" style="background:transparent; color:var(--text-color); border-color:var(--border-color);">Back</a>
+                </div>
+            </div>
+            <div id="caseList"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
